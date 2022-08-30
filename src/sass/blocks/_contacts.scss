@@ -1,0 +1,61 @@
+.contacts {
+  padding-top: 100px;
+  padding-bottom: 45px;
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Neucha';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 88px;
+    color:#fff;
+    text-shadow: 0 0 15px #f293ed;
+  }
+  &__list {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &_twitter {
+      background-image: url("../icons/twitter_icon.svg");
+    }
+    &_instagram {
+      background-image: url("../icons/instagram_icon.svg");
+    }
+    &_vk {
+      background-image: url("../icons/vk_icon.svg");
+    }
+    &_mail {
+      background-image: url("../icons/mail_icon.svg");
+    }
+    &_telegram {
+      background-image: url("../icons/telegram_icon.svg");
+    }
+  }
+  &__text {
+    display: block;
+    margin-left: 15px;
+    font-family: 'Neucha';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    color: #471d45;
+  }
+
+
+}

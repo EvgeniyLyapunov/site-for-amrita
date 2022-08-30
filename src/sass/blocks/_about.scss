@@ -1,0 +1,23 @@
+.about {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 88px;
+    color: #fff;
+  }
+  &__descr {
+    font-family: 'Andika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 61px;
+    letter-spacing: -0.08em;
+    color: #471D45;
+  }
+}

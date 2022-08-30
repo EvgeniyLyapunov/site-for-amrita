@@ -1,0 +1,39 @@
+.promo {
+  padding-top: 70px;
+  padding-bottom: 45px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 200px;
+    background-image: url("../img/promo-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 88px;
+  }
+  &__title {
+    margin-bottom: 5px;
+    font-family: 'Neucha';
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 141px;
+    color: #fff;
+  }
+  &__avatar {
+    display: block;
+    width: 413px;
+    margin-bottom: 21px;
+  }
+  &__welcome {
+    display: inline-block;
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 88px;
+    color: #fff;
+  }
+}
