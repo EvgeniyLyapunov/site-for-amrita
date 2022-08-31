@@ -5,11 +5,6 @@ $(document).ready(function(){
     slidesToShow: 1,
     centerMode: true,
     variableWidth: true,
-    // dots: true,
-    // infinite: true,
-    // speed: 500,
-    // fade: true,
-    // cssEase: 'linear',
     prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.svg"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg"></button>'
   });
@@ -80,5 +75,30 @@ $(document).ready(function(){
       });
       return false;
     });
+
 });
+
+tippy('#tippy-mail', {
+  content: 'Это просто иконка! Адрес скопируй и напиши мне со своей почты, но удобней нажать кнопку Заказать!'
+});
+
+tippy('#tippy-telegram', {
+  content: 'Это просто иконка! Найди меня в телеграм по нику, но можно нажать кнопку Заказать!'
+});
+
+const menu = document.querySelector('.header__nav-list-burger'),
+  menuItem = document.querySelectorAll('.header__nav-item'),
+  hamburger = document.querySelector('.header__burger');
+
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('header__burger_active');
+      menu.classList.toggle('header__nav-list-burger_active');
+  });
+
+  menuItem.forEach(item => {
+      item.addEventListener('click', () => {
+          hamburger.classList.toggle('header__burger_active');
+          menu.classList.toggle('header__nav-list-burger_active');
+      });
+  });
 

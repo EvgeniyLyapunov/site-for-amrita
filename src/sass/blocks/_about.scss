@@ -17,7 +17,36 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 61px;
-    letter-spacing: -0.08em;
     color: #471D45;
   }
+}
+
+@media (max-width: 1400px) {
+  .about {
+    &__title {
+      text-shadow: 0 0 15px #f293ed;
+    }
+    &__descr {
+      font-size: 26px;
+      line-height: 32px;
+      color: #471D45;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .about {
+    &__title {
+      margin-bottom: 20px;
+      font-size: 50px;
+      line-height: 58px;
+      text-shadow: 0 0 15px #f293ed;
+    }
+    &__descr {
+      font-size: 22px;
+      line-height: 25px;
+      color: #471D45;
+    }
+  }
+  
 }

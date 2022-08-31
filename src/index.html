@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AnitaSaluja</title>
+  <link rel="shortcut icon" href="icons/anime-girl-favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -12,8 +13,9 @@
 
   <header class="header" id="up">
     <div class="container">
-      <nav class="header__nav">
-        <ul class="header__nav-list">
+      <nav class="header__nav header__nav_fixed">
+        <img src="img/main-avatar.png" alt="avatar logo" class="header__nav-logo">
+        <ul class="header__nav-list header__nav-list-burger">
           <li class="header__nav-item hvr-float-shadow">
             <a href="#promo" class="header__link">Главная</a>
           </li>
@@ -30,6 +32,11 @@
             <a href="#contacts" class="header__link">Контакты</a>
           </li>
         </ul>
+        <div class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </div>
   </header>
@@ -49,34 +56,64 @@
         <h2 class="galery__title">Галерея</h2>
         <div class="galery__slydes">
           <div class="galery__picture">
-            <img src="img/pic-1.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-1-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-1.jpg" alt="picture">
+            </picture>
           </div>
           <div class="galery__picture">
-            <img src="img/pic-2.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-2-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-2.jpg" alt="picture">
+            </picture>
           </div>
           <div class="galery__picture">
-            <img src="img/pic-3.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-3-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-3.jpg" alt="picture">
+            </picture>
           </div>
           <div class="galery__picture">
-            <img src="img/pic-4.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-4-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-4.jpg" alt="picture">
+            </picture>
           </div>
           <div class="galery__picture">
-            <img src="img/pic-5.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-5-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-5.jpg" alt="picture">
+            </picture>
           </div>
           <div class="galery__picture">
-            <img src="img/pic-6.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-6-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-6.jpg" alt="picture">
+            </picture>
           </div>
           <div class="galery__picture">
-            <img src="img/pic-7.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-7-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-7.jpg" alt="picture">
+            </picture>
           </div>
           <div class="galery__picture">
-            <img src="img/pic-8.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-8-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-8.jpg" alt="picture">
+            </picture>
           </div>
           <div class="galery__picture">
-            <img src="img/pic-9.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-9-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-9.jpg" alt="picture">
+            </picture>
           </div>
           <div class="galery__picture">
-            <img src="img/pic-10.jpg" alt="picture">
+            <picture>
+              <source srcset="img/pic-10-m.jpg" media="(max-width: 950px)">
+              <img src="img/pic-10.jpg" alt="picture">
+            </picture>
           </div>
         </div>
         <div class="galery__notation">
@@ -142,21 +179,21 @@
         <h2 class="contacts__title">Для связи со мной</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a href=" https://twitter.com/AnitaSalujaArt?t=beyoTn430uZ7kUE7pqdN9g&s=09" class="contacts__link contacts__link_twitter"></a></li>
-          <li class="contacts__item">
             <a href="www.instagram.com/" class="contacts__link contacts__link_instagram"></a>
             <span class="contacts__text">@deadweight.photo</span>
           </li>
-          <li class="contacts__item">
-            <a href="https://vk.com/anitasaluja" class="contacts__link contacts__link_vk"></a></li>
-          <li class="contacts__item">
-              <a href="#" class="contacts__link contacts__link_mail"></a>
-              <span class="contacts__text">anitasaluja@yandex.ru</span>
+          <li class="contacts__item" id="tippy-mail">
+            <a href="#" class="contacts__link contacts__link_mail"></a>
+            <span class="contacts__text">anitasaluja@yandex.ru</span>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item" id="tippy-telegram">
             <a href="#" class="contacts__link contacts__link_telegram"></a>
             <span class="contacts__text">@AnitaSaluja</span>
-        </li>
+          </li>
+          <li class="contacts__item">
+            <a href=" https://twitter.com/AnitaSalujaArt?t=beyoTn430uZ7kUE7pqdN9g&s=09" class="contacts__link contacts__link_twitter"></a></li>
+          <li class="contacts__item">
+            <a href="https://vk.com/anitasaluja" class="contacts__link contacts__link_vk"></a></li>
         </ul>
 
       </div>
@@ -196,6 +233,8 @@
 
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/wow.min.js"></script>
