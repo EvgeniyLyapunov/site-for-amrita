@@ -11,12 +11,20 @@ $(document).ready(function(){
 
    // smooth scroll and pageup
    $(window).scroll(function() {
-    if($(this).scrollTop() > 1600) {
+    if($(this).scrollTop() > 1200) {
       $(".pageup").fadeIn();
     }
     else {
       $(".pageup").fadeOut();
     }
+
+    if($(this).scrollTop() > 400) {
+      $(".header__nav-logo").fadeIn();
+    }
+    else {
+      $(".header__nav-logo").fadeOut();
+    }
+
   });
 
     // modal windows

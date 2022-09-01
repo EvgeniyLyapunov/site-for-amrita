@@ -63,7 +63,7 @@
       z-index: 5;
     }
     &__nav-logo {
-      display: block;
+      // display: block;
       position: absolute;
       top: -30px;
       left: 30px;
@@ -92,6 +92,9 @@
       margin: 15px 0;
       border: none;
       font-size: 26px;
+      &:active {
+        text-shadow: 0 0 30px #fff;
+      }
     }
     &__burger {
       display: block;
@@ -125,6 +128,30 @@
             transform: translateY(11px) rotate(45deg);
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .header {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    &__nav_fixed {
+      width: 290px;
+    }
+    &__nav-logo {
+      top: -10px;
+      left: 20px;
+      width: 70px;
+    }
+    &__nav-item {
+      padding-right: 0;
+      margin: 15px 0;
+      border: none;
+      font-size: 24px;
+      &:active {
+        text-shadow: 0 0 30px #fff;
       }
     }
   }

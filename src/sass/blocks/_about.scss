@@ -48,5 +48,22 @@
       color: #471D45;
     }
   }
-  
 }
+
+@media (max-width: 610px) {
+  .about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__title {
+      margin-bottom: 20px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    &__descr {
+      font-size: 18px;
+      line-height: 22px;
+      color: #471D45;
+    }
+  }
+}
+

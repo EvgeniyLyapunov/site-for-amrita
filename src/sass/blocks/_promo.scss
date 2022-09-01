@@ -55,10 +55,8 @@
       margin-bottom: 40px;
     }
     &__welcome {
-      display: inline-block;
       font-size: 60px;
       line-height: 68px;
-      color: #fff;
     }
   }
 }
@@ -68,15 +66,38 @@
     font-size: 80px;
     line-height: 100px;
     &__avatar {
-      display: block;
       width: 350px;
       margin-bottom: 40px;
     }
     &__welcome {
-      display: inline-block;
       font-size: 40px;
       line-height: 48px;
-      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .promo {
+    padding-top: 70px;
+    padding-bottom: 25px;
+    &__wrapper {
+      margin: 0 auto;
+      padding-top: 30px;
+      padding-bottom: 40px;
+      border-radius: 30px;
+    }
+    &__title {
+      margin-bottom: 30px;
+      font-size: 60px;
+      line-height: 70px;
+    }
+    &__avatar {
+      width: 200px;
+      margin-bottom: 40px;
+    }
+    &__welcome {
+      font-size: 26px;
+      line-height: 28px;
     }
   }
 }

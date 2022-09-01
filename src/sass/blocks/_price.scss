@@ -147,3 +147,40 @@
     }
   }
 }
+
+@media (max-width: 610px) {
+  .price {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__title {
+      margin-bottom: 20px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    &__table {
+      width: 100%;
+      margin-bottom: 50px;
+      box-shadow: 2px 2px 10px #af69ac;
+      thead {
+        height: 50px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      tbody tr{
+        height: 40px;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    &__descr {
+      margin-bottom: 25px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__btn {
+      width: 200px;
+      height: 40px;
+      font-size: 20px;
+    }
+  }
+}
