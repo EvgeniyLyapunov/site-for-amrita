@@ -18,7 +18,7 @@ $(document).ready(function(){
       $(".pageup").fadeOut();
     }
 
-    if($(this).scrollTop() > 400) {
+    if($(this).scrollTop() > 400 && window.matchMedia('(max-width: 950px)').matches) {
       $(".header__nav-logo").fadeIn();
     }
     else {
