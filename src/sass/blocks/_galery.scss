@@ -17,11 +17,14 @@
     margin: 0 auto;
     margin-bottom: 50px;
   }
+  &__img {
+    display: block;
+    margin: 0 40px;
+    border-radius: 23px
+  }
   &__picture {
-    img {
-      display: block;
-      margin: 0 40px;
-      border-radius: 23px
+    .galery__zoom-plus {
+      display: none;
     }
   }
   &__notation {
@@ -161,8 +164,21 @@
       margin-bottom: 85px;
     }
     &__picture {
+      position: relative;
       img {
         border-radius: 23px;
+      }
+    }
+    &__picture {
+      .galery__zoom-plus {
+        position: absolute;
+        z-index: 10;
+        right: 50px;
+        bottom: 10px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        display: block;
       }
     }
     &__notation {
@@ -185,6 +201,12 @@
       bottom: -200px;
       right: 0;
       transform: translateX(-50%);
+      width: 40px;
+      height: 40px;
+
+      right: 14px;
+      top: 258px;
+
       img {
         width: 40px;
         height: 40px;

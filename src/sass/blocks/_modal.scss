@@ -197,4 +197,30 @@ label.error {
     }
   }
 }
+@media (max-width: 610px) {
+  .overlay-active {
+    display: block;
+  }
+  .picture-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  .pic-contain {
+    width: 100vw;
+    height: 100vw;
+    object-fit: contain;
+  }
+  .zoom-off {
+    position: absolute;
+    z-index: 11;
+    right: 6vw;
+    bottom: -60px;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+}
 

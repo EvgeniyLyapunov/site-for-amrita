@@ -84,20 +84,20 @@ $(document).ready(function(){
       return false;
     });
 
-});
 
-tippy('#tippy-mail', {
-  content: 'Это просто иконка! Адрес скопируй и напиши мне со своей почты, но удобней нажать кнопку Заказать!'
-});
-
-tippy('#tippy-telegram', {
-  content: 'Это просто иконка! Найди меня в телеграм по нику, но можно нажать кнопку Заказать!'
-});
-
-const menu = document.querySelector('.header__nav-list-burger'),
-  menuItem = document.querySelectorAll('.header__nav-item'),
-  hamburger = document.querySelector('.header__burger');
-
+  tippy('#tippy-mail', {
+    content: 'Это просто иконка! Адрес скопируй и напиши мне со своей почты, но удобней нажать кнопку Заказать!'
+  });
+  
+  tippy('#tippy-telegram', {
+    content: 'Это просто иконка! Найди меня в телеграм по нику, но можно нажать кнопку Заказать!'
+  });
+  
+  //burger menu
+  const menu = document.querySelector('.header__nav-list-burger'),
+    menuItem = document.querySelectorAll('.header__nav-item'),
+    hamburger = document.querySelector('.header__burger');
+  
   hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('header__burger_active');
       menu.classList.toggle('header__nav-list-burger_active');
@@ -109,4 +109,48 @@ const menu = document.querySelector('.header__nav-list-burger'),
           menu.classList.toggle('header__nav-list-burger_active');
       });
   });
+
+
+  //picture zoom modal
+
+  const iconZoomPlus = document.querySelectorAll(".galery__zoom-plus");
+    
+  iconZoomPlus.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      const pic = e.target.previousElementSibling.querySelector("img").getAttribute("src");
+      const modalPic = document.createElement("div");
+      modalPic.innerHTML = `
+      <div class="overlay overlay-active" data-zoomPic>
+        <div class="picture-modal">
+          <img class="pic-contain" src="${pic}">
+          <img class="zoom-off" src="icons/zoom_search_minus.png" alt="кнопка возврата к нормальному размеру картинки">
+        </div>
+      </div>
+      `;
+      document.body.append(modalPic);
+      document.body.style.overflow = "hidden";
+  
+      const iconZoomOff = document.querySelector(".zoom-off");
+      iconZoomOff.addEventListener("click", (e) => {
+        modalPic.remove();
+        document.body.style.overflow = "";
+      });
+    });
+  });
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+});
+
+
 
