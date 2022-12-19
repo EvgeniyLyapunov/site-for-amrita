@@ -51,11 +51,15 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 55px;
+    text-indent: 30px;
     color: #471d45;
   }
   &__button-wrapper {
     display: flex;
     justify-content: center;
+  }
+  &__btn {
+    border: 2px solid #471d45;
   }
  
 }

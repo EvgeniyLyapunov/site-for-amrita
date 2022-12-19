@@ -9,6 +9,16 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg"></button>'
   });
 
+  $('.experiments__galery').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left_dark.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right_dark.svg"></button>'
+  });
+
    // smooth scroll and pageup
    $(window).scroll(function() {
     if($(this).scrollTop() > 1200) {

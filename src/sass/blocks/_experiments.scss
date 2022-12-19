@@ -1,0 +1,73 @@
+.experiments {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 88px;
+    color: #fff;
+    text-shadow: 0 0 15px #f293ed;
+  }
+  &__descr {
+    margin-bottom: 20px;
+    font-family: 'Andika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-indent: 30px;
+    color: #471D45;
+  }
+  &__galery {
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+  }
+  &__galery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  &__galery-pic {
+    margin: 0 auto;
+    display: block;
+    width: 500px;
+    object-fit: contain;
+  }
+}
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  left: -36px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: -36px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
